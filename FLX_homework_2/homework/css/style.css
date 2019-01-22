@@ -1,0 +1,156 @@
+@media print {
+
+  @page{
+    margin: 0px;
+  }
+
+  .tm-sidebar, #about,
+  .heading.tm-content-box,
+  .blocks, #ideas, .img-fluid, #contact
+  {
+    display: none;
+  }
+
+  p{
+    text-indent: 1.5em;
+  }
+  p::first-letter{
+    color: #87CEFA;
+    font-size: 30px;
+  }
+  p:first-of-type{
+    font-style: italic;
+  }
+  .tm-footer .text-xs-center,
+  .tm-content-box .tm-banner .tm-banner-text{
+    font-style: normal;
+  }
+
+  #home{
+    margin: -30px
+  }
+
+  .tm-content-box .flex-item .tm-section-title{
+    color: #392fff;
+  }
+
+  .flex-item img{
+    width: 400px;
+  }
+  .flex-2-col{
+    display: flex;
+    align-items: center;
+    margin: -30px
+  }
+}
+
+@media screen {
+
+  .margin-b-10,
+  .tm-sidebar,
+  section{
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  section::before{
+    content: '';
+    position: absolute;
+    border: 250px solid transparent;
+    border-left: 0px;
+    border-top: 30px solid lightskyblue;
+    border-bottom: 0px;
+  }
+
+  .margin-b-10{
+    outline: 30px solid #f5f5f5;
+    outline-offset: -30px;
+
+  }
+
+  .flex-2-col{
+    display: flex;
+    align-items: center;
+  }
+
+  p:first-letter{
+    color: #87CEFA;
+    font-size: 30px;
+  }
+
+  p:first-of-type {
+    font-style: italic;
+  }
+  .tm-main-content .tm-content-header .tm-banner-inner .tm-banner-text{
+    font-style: normal;
+  }
+
+  p {
+    line-height: 2em;
+  }
+
+  .tm-content-box .flex-item .tm-section-description{
+    text-indent: 1.5em;
+  }
+
+  .tm-section-title-box:hover,
+  .box-bg:hover{
+    background-color: #AFEEEE;
+    color: white;
+    font-weight: bold;
+  }
+
+  .tm-nav-item-link:hover{
+    background-color: #f5f5f5;
+  }
+
+  .padding-medium a:visited{
+    text-decoration: underline;
+    color: black;
+  }
+  .padding-medium a:hover{
+    color: lightskyblue;
+    text-decoration-style: double;
+  }
+  .heading .padding-medium .text::after{
+    content: "New";
+    color: red;
+    vertical-align: super;
+    font-size: 12px
+  }
+
+  .tm-content-box .gallery-container li:nth-child(even){
+    background: #f5f5f5;
+  }
+  .tm-content-box .gallery-container li p::first-letter{
+    color: black;
+  }
+  .box-work{
+    padding: 10px;
+  }
+
+  #tmCarousel .flex-item .tm-section-title{
+    letter-spacing: 5px;
+    color: gainsboro;
+  }
+
+  .mandatory-field::after{
+    content: "*";
+    vertical-align: super;
+    color: red;
+  }
+
+  .submit-btn{
+    float: right;
+    border-radius: 0px;
+    border: 1px solid lightskyblue;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    color: lightskyblue;
+    font-size: 14pt;
+  }
+  .submit-btn:hover{
+    background-color: lightskyblue;
+    border: 1px solid deepskyblue;
+  }
+}
