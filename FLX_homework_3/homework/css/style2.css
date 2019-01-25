@@ -1,0 +1,164 @@
+body {
+  margin: 0px;
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+  background: #efefef; }
+  body header {
+    height: 100vh;
+    background: url("../img/header_background_v2.jpg") no-repeat;
+    background-size: cover; }
+    body header .top-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      body header .top-wrapper .logo img {
+        width: 40%; }
+      body header .top-wrapper nav {
+        padding-top: 10px; }
+        body header .top-wrapper nav a {
+          font-size: 12pt;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #ff5722;
+          border-left: 2px solid grey;
+          padding: 15px 100px;
+          font-weight: bold; }
+          body header .top-wrapper nav a:first-child {
+            border-left: 0px; }
+    body header section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+      body header section .btn-top {
+        font-size: 10pt;
+        padding: 15px 70px;
+        text-decoration: none;
+        background-color: #0401ac;
+        color: white;
+        text-transform: uppercase; }
+      body header section h1 {
+        color: #ff5722;
+        text-transform: uppercase;
+        font-family: Roboto;
+        margin-bottom: 25px; }
+  body main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 63%; }
+    body main .toolbar {
+      padding: 15px; }
+      body main .toolbar input {
+        height: 30px;
+        float: right;
+        background: #efefef;
+        border: 1px solid #cfd8dc; }
+    body main .post-list h1 {
+      padding-top: 30px;
+      margin: 0px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #757575; }
+    body main .post-list article {
+      display: flex;
+      padding: 10px;
+      background: white;
+      margin-bottom: 15px; }
+      body main .post-list article img {
+        width: 30%;
+        height: 40%; }
+      body main .post-list article .post {
+        padding: 10px; }
+        body main .post-list article .post .post-description {
+          font-size: 8pt;
+          padding-bottom: 10px;
+          color: #c3c3d4;
+          border-bottom: 1px solid #cfd8dc; }
+        body main .post-list article .post h3 {
+          margin-top: 5px;
+          margin-bottom: 0px;
+          text-transform: uppercase;
+          color: #607d8b; }
+        body main .post-list article .post p {
+          margin-top: 0px;
+          margin-bottom: 15px;
+          font-size: 10pt;
+          line-height: 150%;
+          color: #75758b; }
+      body main .post-list article .btn {
+        padding: 10px 70px;
+        color: white;
+        background: #0401ac;
+        text-transform: uppercase;
+        border: 0px;
+        float: right;
+        margin-right: 10px; }
+    body main .about {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto; }
+      body main .about h1 {
+        margin-bottom: 0px;
+        margin-top: 40px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #757575; }
+      body main .about p {
+        font-size: 10pt;
+        line-height: 150%;
+        margin-bottom: 20px;
+        color: #75758b; }
+        body main .about p:first-of-type {
+          margin-top: 0px; }
+      body main .about img {
+        max-width: 100%; }
+    body main .contact-form h1 {
+      text-align: right;
+      margin: 0;
+      margin-top: 50px;
+      color: #757575; }
+    body main .contact-form h4 {
+      text-align: right;
+      margin: 0;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #757575; }
+    body main .contact-form p {
+      text-align: right;
+      font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+      font-size: 10pt;
+      margin-bottom: 3px;
+      color: #607d8b; }
+    body main .contact-form .flex-item {
+      display: flex;
+      justify-content: space-between; }
+      body main .contact-form .flex-item .row-1-inp {
+        width: 49%; }
+        body main .contact-form .flex-item .row-1-inp input {
+          height: 45px;
+          width: 100%;
+          box-sizing: border-box;
+          background: #efefef;
+          border: 1px solid #cfd8dc; }
+      body main .contact-form .flex-item p::after {
+        content: ' *'; }
+    body main .contact-form .text-inp {
+      width: 100%; }
+      body main .contact-form .text-inp textarea {
+        box-sizing: border-box;
+        width: inherit;
+        background: #efefef;
+        border: 1px solid #cfd8dc; }
+    body main .contact-form button {
+      margin-top: 10px;
+      padding: 10px 70px;
+      color: white;
+      background: #0401ac;
+      text-transform: uppercase;
+      border: 0px;
+      float: right; }
+    body main .contact-form .clearfix {
+      clear: both; }
+  body footer {
+    margin-top: 20px;
+    font-size: 10pt;
+    color: #75758b; }

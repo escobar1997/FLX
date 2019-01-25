@@ -1,0 +1,23 @@
+
+
+$font-1: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+$header-background-1: url("../img/header_background_v2.jpg");
+$header-text-color: #ff5722;
+$main-background: #efefef;
+$border-style: 1px solid #cfd8dc;
+$section-title-color: #757575;
+$article-title-color: #607d8b;
+$content-color: #75758b;
+$btn-background: #0401ac;
+$article-background: white;
+$post-description-color: #c3c3d4;
+$post-description-border-color: #cfd8dc;
+$btn-text-color: white;
+
+@mixin main-btn-style{
+  padding: 10px 70px;
+  color: $btn-text-color;
+  background: $btn-background;
+  text-transform: uppercase;
+  border: 0px;
+}

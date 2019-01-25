@@ -1,0 +1,226 @@
+body{
+  margin: 0px;
+  font-family: $font-1;
+  background: $main-background;
+
+  header {
+    height: 100vh;
+    background: $header-background-1 no-repeat;
+    background-size: cover;
+
+    .top-wrapper{
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+          img{
+            width: 40%;
+        }
+      }
+
+      nav{
+        padding-top: 10px;
+        a{
+          font-size: 12pt;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $header-text-color;
+          border-left: 2px solid grey;
+          padding: 15px 100px;
+          font-weight: bold;
+          &:first-child{
+            border-left: 0px;
+          }
+        }
+      }
+    }
+
+    section{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      .btn-top{
+        font-size: 10pt;
+        padding: 15px 70px;
+        text-decoration: none;
+        background-color: $btn-background;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      h1{
+        color: $header-text-color;
+        text-transform: uppercase;
+        font-family: Roboto;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 63%;
+
+    .toolbar{
+      padding: 15px;
+
+      input{
+        height: 30px;
+        float: right;
+        background: $main-background;
+        border: $border-style;
+      }
+    }
+
+    .post-list{
+
+
+      h1{
+        padding-top: 30px;
+        margin: 0px;
+        text-align: right;
+        text-transform: uppercase;
+        color: $section-title-color;
+      }
+      article{
+        display: flex;
+        padding: 10px;
+        background: $article-background;
+        margin-bottom: 15px;
+
+        img{
+          width: 30%;
+          height: 40%;
+        }
+
+        .post{
+          padding: 10px;
+
+          .post-description{
+            font-size: 8pt;
+            padding-bottom: 10px;
+            color: $post-description-color;
+            border-bottom: 1px solid $post-description-border-color;
+
+          }
+          h3{
+            margin-top: 5px;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            color: $article-title-color;
+          }
+
+          p{
+            margin-top: 0px;
+            margin-bottom: 15px;
+            font-size: 10pt;
+            line-height: 150%;
+            color: $content-color;
+          }
+        }
+
+        .btn{
+          @include main-btn-style;
+          float: right;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .about{
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1{
+        margin-bottom: 0px;
+        margin-top: 40px;
+        text-align: right;
+        text-transform: uppercase;
+        color: $section-title-color;
+        }
+
+      p{
+        font-size: 10pt;
+        line-height: 150%;
+        margin-bottom: 20px;
+        color: $content-color;
+
+        &:first-of-type{
+          margin-top: 0px;
+        }
+      }
+
+      img{
+        max-width: 100%;
+      }
+    }
+    .contact-form{
+      h1{
+        text-align: right;
+        margin: 0;
+        margin-top: 50px;
+        color: $section-title-color;
+      }
+      h4{
+        text-align: right;
+        margin: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: $section-title-color;
+      }
+      p{
+        text-align: right;
+        font-family: $font-1;
+        font-size: 10pt;
+        margin-bottom: 3px;
+        color: $article-title-color;
+      }
+      .flex-item{
+        display: flex;
+        justify-content: space-between;
+        .row-1-inp{
+          width: 49%;
+          input{
+            height: 45px;
+            width: 100%;
+            box-sizing: border-box;
+            background: $main-background;
+            border: $border-style;
+          }
+        }
+        p{
+          &::after{
+            content: ' *';
+          }
+        }
+      }
+      .text-inp{
+        width: 100%;
+        textarea{
+          box-sizing: border-box;
+          width: inherit;
+          background: $main-background;
+          border: $border-style;
+        }
+      }
+      button{
+        margin-top: 10px;
+        @include main-btn-style;
+        float: right;
+      }
+      .clearfix{
+        clear: both;
+      }
+    }
+  }
+  footer{
+    margin-top: 20px;
+    font-size: 10pt;
+    color: $content-color;
+  }
+}

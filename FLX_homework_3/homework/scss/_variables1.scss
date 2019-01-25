@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+
+$font-1: "Roboto", "Ubuntu", "Cantarell", Helvetica ,sans-serif;
+$header-background-1: url("../img/header_background_v1.jpg");
+$header-text-color: #ececec;
+$main-background: white;
+$border-style: 1px solid #607d8b;
+$section-title-color: #010f16;
+$article-title-color: #0097a7;
+$content-color: #010f16;
+$btn-background: #01acac;
+$article-background: #efefef;
+$post-description-color: red;
+$post-description-border-color: #607d8b;
+$btn-text-color: white;
+
+@mixin main-btn-style{
+  padding: 10px 70px;
+  color: $btn-text-color;
+  background: $btn-background;
+  text-transform: uppercase;
+  border: 0px;
+}
