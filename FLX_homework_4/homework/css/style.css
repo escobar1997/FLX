@@ -222,7 +222,8 @@ body {
     margin-right: 4vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    border-top: 2px solid #f3f3f3; }
+    border-top: 2px solid #E8E8E8;
+    color: #9E9E9E; }
     body .main-wrapper footer nav {
       float: right; }
       body .main-wrapper footer nav a {
