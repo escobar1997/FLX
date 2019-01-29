@@ -1,10 +1,15 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
 body {
   margin: 0px;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  max-width: 100vw;
+  overflow-x: hidden; }
+  body .main-wrapper p, body .main-wrapper pre {
+    font-size: 10pt; }
   body .main-wrapper header {
     background: url("../img/sample2.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
     color: #ffffff; }
     body .main-wrapper header .top-wrapper {
@@ -39,8 +44,7 @@ body {
         body .main-wrapper header .logo h1 span {
           font-size: 50pt; }
       body .main-wrapper header .logo p {
-        margin: 0px;
-        font-size: 10pt; }
+        margin: 0px; }
     body .main-wrapper header .header-nav-btns {
       display: flex;
       justify-content: space-around;
@@ -64,12 +68,12 @@ body {
       body .main-wrapper main .top-section .triangle-text::before {
         content: '';
         position: absolute;
-        box-sizing: border-box;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        height: 31vh;
-        background: linear-gradient(to right top, #f3f3f3 50%, transparent 50%); }
+        left: 0;
+        border-bottom: 31vh solid #f3f3f3;
+        border-left: 0;
+        border-right: 100vw solid transparent;
+        margin: 0;
+        padding: 0; }
       body .main-wrapper main .top-section .triangle-text .text {
         z-index: 1; }
       body .main-wrapper main .top-section .triangle-text .text-left {
@@ -77,6 +81,8 @@ body {
         flex-basis: 20vw;
         width: 10vw;
         align-self: flex-end; }
+        body .main-wrapper main .top-section .triangle-text .text-left p {
+          font-size: 12pt; }
       body .main-wrapper main .top-section .triangle-text .text-right {
         flex-basis: 45vw;
         color: #ffffff; }
@@ -115,10 +121,10 @@ body {
       body .main-wrapper main .top-section .img-text-content .text-content {
         align-self: center; }
         body .main-wrapper main .top-section .img-text-content .text-content P {
-          margin-top: 1vh;
           margin-bottom: 6vh;
           padding-left: 7vw;
-          text-align: center; }
+          text-align: center;
+          box-sizing: content-box; }
           body .main-wrapper main .top-section .img-text-content .text-content P:last-child {
             margin-bottom: 1vh; }
     body .main-wrapper main .top-section .article-form {
@@ -166,7 +172,6 @@ body {
           border: 0px;
           height: 3.5vh;
           width: 6vw;
-          box-sizing: border-box;
           font-weight: bold; }
     body .main-wrapper main .contact-section {
       background: #ffffff;
@@ -224,9 +229,12 @@ body {
     padding-bottom: 1vh;
     border-top: 2px solid #E8E8E8;
     color: #9E9E9E; }
+    body .main-wrapper footer span {
+      font-size: 10pt; }
     body .main-wrapper footer nav {
       float: right; }
       body .main-wrapper footer nav a {
         text-decoration: none;
         color: #000000;
-        margin-left: 1vw; }
+        margin-left: 1vw;
+        font-size: 10pt; }
