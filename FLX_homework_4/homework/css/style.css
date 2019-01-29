@@ -1,0 +1,231 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0px;
+  font-family: "Open Sans"; }
+  body .main-wrapper header {
+    background: url("../img/sample2.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff; }
+    body .main-wrapper header .top-wrapper {
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-between; }
+      body .main-wrapper header .top-wrapper p {
+        margin: 0px;
+        padding-left: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 10pt; }
+      body .main-wrapper header .top-wrapper .registr-buttons {
+        padding-right: 40px; }
+        body .main-wrapper header .top-wrapper .registr-buttons a {
+          text-decoration: none;
+          color: #ffffff;
+          padding-left: 20px;
+          font-size: 10pt; }
+    body .main-wrapper header .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30vh; }
+      body .main-wrapper header .logo h1 {
+        text-transform: uppercase;
+        margin: 0px;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 35pt; }
+        body .main-wrapper header .logo h1 span {
+          font-size: 50pt; }
+      body .main-wrapper header .logo p {
+        margin: 0px;
+        font-size: 10pt; }
+    body .main-wrapper header .header-nav-btns {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 28vh; }
+      body .main-wrapper header .header-nav-btns a {
+        padding: 2vh 4vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        text-decoration: none; }
+  body .main-wrapper main {
+    background: #f3f3f3; }
+    body .main-wrapper main .top-section .triangle-text {
+      height: 31vh;
+      background: #000000;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5vh;
+      padding-right: 5vh;
+      margin-bottom: 0px; }
+      body .main-wrapper main .top-section .triangle-text::before {
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        height: 31vh;
+        background: linear-gradient(to right top, #f3f3f3 50%, transparent 50%); }
+      body .main-wrapper main .top-section .triangle-text .text {
+        z-index: 1; }
+      body .main-wrapper main .top-section .triangle-text .text-left {
+        margin-bottom: 6vh;
+        flex-basis: 20vw;
+        width: 10vw;
+        align-self: flex-end; }
+      body .main-wrapper main .top-section .triangle-text .text-right {
+        flex-basis: 45vw;
+        color: #ffffff; }
+    body .main-wrapper main .top-section h2 {
+      text-align: center;
+      margin: 0px;
+      margin-bottom: 1vh;
+      font-weight: normal;
+      font-size: 22pt; }
+    body .main-wrapper main .top-section .img-text-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 5vh; }
+      body .main-wrapper main .top-section .img-text-content .common {
+        width: 46vw; }
+      body .main-wrapper main .top-section .img-text-content .image-content {
+        background: url("../img/sample.jpg");
+        background-size: cover;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        height: 30vh;
+        padding: 2vh; }
+        body .main-wrapper main .top-section .img-text-content .image-content .like a {
+          text-decoration: none;
+          font-size: 10pt;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          padding: 0.5vh 0.5vw;
+          background: rgba(0, 0, 0, 0.6); }
+        body .main-wrapper main .top-section .img-text-content .image-content p {
+          align-self: flex-end;
+          color: #ffffff;
+          margin: 0px;
+          font-size: 10pt; }
+      body .main-wrapper main .top-section .img-text-content .text-content {
+        align-self: center; }
+        body .main-wrapper main .top-section .img-text-content .text-content P {
+          margin-top: 1vh;
+          margin-bottom: 6vh;
+          padding-left: 7vw;
+          text-align: center; }
+          body .main-wrapper main .top-section .img-text-content .text-content P:last-child {
+            margin-bottom: 1vh; }
+    body .main-wrapper main .top-section .article-form {
+      background: #ffffff;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 5vh;
+      padding-bottom: 10vh; }
+      body .main-wrapper main .top-section .article-form .articles {
+        width: 17vw;
+        padding: 3vh 2vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+        body .main-wrapper main .top-section .article-form .articles p {
+          margin: 0px;
+          padding-top: 0px;
+          padding-bottom: 1vh;
+          text-align: left; }
+        body .main-wrapper main .top-section .article-form .articles .explore_btn button {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+          background: #097774;
+          border: 0px;
+          width: 100%;
+          height: 3.5vh; }
+    body .main-wrapper main .top-section .newsletter-section {
+      padding: 1vw 3vh; }
+      body .main-wrapper main .top-section .newsletter-section .subscribe {
+        text-align: right; }
+        body .main-wrapper main .top-section .newsletter-section .subscribe label {
+          font-size: 15pt; }
+        body .main-wrapper main .top-section .newsletter-section .subscribe #email-inp {
+          height: 3.5vh;
+          box-sizing: border-box;
+          width: 9vw;
+          background: #f3f3f3;
+          border: 1px solid #000000; }
+          body .main-wrapper main .top-section .newsletter-section .subscribe #email-inp::placeholder {
+            color: #000000;
+            padding-left: 0.5vw; }
+        body .main-wrapper main .top-section .newsletter-section .subscribe button {
+          text-decoration: none;
+          color: #ffffff;
+          background: #097774;
+          border: 0px;
+          height: 3.5vh;
+          width: 6vw;
+          box-sizing: border-box;
+          font-weight: bold; }
+    body .main-wrapper main .contact-section {
+      background: #ffffff;
+      padding: 5vh 4vw;
+      display: flex;
+      justify-content: space-between; }
+      body .main-wrapper main .contact-section .contact-information {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 60vw; }
+        body .main-wrapper main .contact-section .contact-information .information-part {
+          padding-right: 1vw; }
+          body .main-wrapper main .contact-section .contact-information .information-part p {
+            color: #9E9E9E; }
+        body .main-wrapper main .contact-section .contact-information .black {
+          width: 40%; }
+        body .main-wrapper main .contact-section .contact-information .tweet {
+          width: 40%; }
+          body .main-wrapper main .contact-section .contact-information .tweet P {
+            font-style: italic; }
+            body .main-wrapper main .contact-section .contact-information .tweet P:last-child {
+              color: #F0F0F0;
+              font-style: normal; }
+        body .main-wrapper main .contact-section .contact-information .contact {
+          width: 20%; }
+          body .main-wrapper main .contact-section .contact-information .contact pre {
+            font-style: normal;
+            font-family: "Open Sans";
+            color: #9E9E9E; }
+      body .main-wrapper main .contact-section .newsletter-bottom {
+        flex-basis: 25vw; }
+        body .main-wrapper main .contact-section .newsletter-bottom p {
+          color: #9E9E9E; }
+        body .main-wrapper main .contact-section .newsletter-bottom #email-inp-bottom {
+          width: 9vw;
+          box-sizing: border-box;
+          height: 3.5vh;
+          background: #f3f3f3;
+          border: 1px solid #000000; }
+          body .main-wrapper main .contact-section .newsletter-bottom #email-inp-bottom::placeholder {
+            color: #000000;
+            padding-left: 0.5vw; }
+        body .main-wrapper main .contact-section .newsletter-bottom button {
+          text-decoration: none;
+          color: #ffffff;
+          background: #097774;
+          border: 0px;
+          height: 3.5vh;
+          width: 6vw;
+          font-weight: bold; }
+  body .main-wrapper footer {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-top: 2px solid #f3f3f3; }
+    body .main-wrapper footer nav {
+      float: right; }
+      body .main-wrapper footer nav a {
+        text-decoration: none;
+        color: #000000;
+        margin-left: 1vw; }
