@@ -100,7 +100,7 @@ main{
   max-height: 100%;
 }
 .image img:hover{
-  opacity: 0.6;
+  filter: opacity(60%);
   cursor: pointer;
 }
 .post-description{
