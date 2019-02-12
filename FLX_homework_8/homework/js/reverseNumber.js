@@ -1,6 +1,11 @@
 function reverseNumber(number) {
-  var reverseNumber = number.toString().split('').reverse().join('');
-  return Math.sign(number) * parseInt(reverseNumber);
+  var rev = [];
+  var stringNumber = number.toString().split('');
+  for (var i = 0; i < stringNumber.length; i++){
+    rev[i] = stringNumber[(stringNumber.length - 1) - i];
+  }
+  stringNumber = rev.join('');
+  return Math.sign(number) * parseInt(stringNumber);
 }
 reverseNumber(123);
 reverseNumber(-456);
