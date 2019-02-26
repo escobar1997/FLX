@@ -6,19 +6,15 @@
   margin-right: auto;
 }
 
-.btn{
-
-}
-
-.btn a{
-    text-decoration: none;
-    color: black;
-    background: grey;
-    border-radius: 4px;
-    border: 1px solid grey;
-}
-
 .group-btn{
   display: flex;
   justify-content: center;
+}
+
+.del-btn{
+  background-image: url("img/remove-s.jpg");
+  background-size: cover;
+  border: 0;
+  height: 15px;
+  width: 15px;
 }
