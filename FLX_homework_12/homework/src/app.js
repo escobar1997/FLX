@@ -10,14 +10,14 @@ const uncheckedItem = document.getElementById('unchecked-item');
 const notif = document.getElementById('notif');
 
 const todoItems = [
-     {isDone: false, id: 12345, description: 'Todo 1'},
+     {isDone: false, id: 12345, description: 'Todo 1'}
 ];
 let todoItemsJSON = sessionStorage.getItem('todo');
 let help = JSON.parse(todoItemsJSON);
-if (help != null) {
-  todoItems.splice(0, 1);
+if (help !== null) {
+  todoItems.splice(zero, one);
   console.log(todoItems);
-  for (var i = 0; i < help.length; i++) {
+  for (let i = 0; i < help.length; i++) {
     todoItems.push(help[i]);
   }
 }
@@ -30,6 +30,7 @@ const cancelModifBtn = document.getElementById('cancel-modif-btn');
 
 let modifyItem = null;
 const zero = 0;
+const one = 1;
 
 newTask.style.display = 'none';
 modTask.style.display = 'none';
@@ -37,10 +38,10 @@ saveChngBtn.disabled = true;
 
 window.addEventListener('load', function () {
   window.location.hash = '';
-  if (todoItems.length > 0) {
+  if (todoItems.length > zero) {
     notif.style.display = 'none';
   }
-  for (var i = 0; i < todoItems.length; i++) {
+  for (let i = 0; i < todoItems.length; i++) {
 
     let div = document.createElement('div');
     div.setAttribute('class', 'task-list-item');
@@ -163,12 +164,12 @@ function checkUsage(event) {
     label.style.background = 'grey';
     label.removeEventListener('click', labelClick);
     //console.log(event.target.parentNode);
-    for (var i = 0; i < todoItems.length; i++) {
-      if (todoItems[i].id == event.target.parentNode.id) {
+    for (let i = 0; i < todoItems.length; i++) {
+      if (todoItems[i].id === event.target.parentNode.id) {
         todoItems[i].isDone = true;
       }
     }
-    sessionStorage.removeItem("todo");
+    sessionStorage.removeItem('todo');
     sessionStorage.setItem('todo', JSON.stringify(todoItems));
     console.log(event.target.parentNode);
   } else {
@@ -176,8 +177,8 @@ function checkUsage(event) {
     event.target.parentNode.className = 'task-list-item';
     label.style.background = 'transparent';
     label.addEventListener('click', labelClick);
-    for (var i = 0; i < todoItems.length; i++) {
-      if (todoItems[i].id == event.target.parentNode.id) {
+    for (let i = 0; i < todoItems.length; i++) {
+      if (todoItems[i].id === event.target.parentNode.id) {
         todoItems[i].isDone = false;
       }
     }
@@ -217,12 +218,12 @@ function delBtnUsage(event) {
   //console.log(event.target.parentNode.parentNode);
   if (event.target.parentNode.parentNode.id === 'unchecked-item') {
 
-    for (var i = 0; i < todoItems.length; i++) {
-      if (todoItems[i].id == event.target.parentNode.id) {
+    for (let i = 0; i < todoItems.length; i++) {
+      if (todoItems[i].id === event.target.parentNode.id) {
         todoItems.splice(i, 1);
       }
     }
-    sessionStorage.removeItem("todo");
+    sessionStorage.removeItem('todo');
     sessionStorage.setItem('todo', JSON.stringify(todoItems));
     console.log(todoItems);
     uncheckedItem.removeChild(event.target.parentNode);
@@ -254,12 +255,12 @@ modifTaskInp.addEventListener('input', function () {
 
 saveModifBtn.addEventListener('click', function () {
   modifyItem.innerHTML = modifTaskInp.value;
-  for (var i = 0; i < todoItems.length; i++) {
-    if (todoItems[i].id == modifyItem.parentNode.id) {
+  for (let i = 0; i < todoItems.length; i++) {
+    if (todoItems[i].id === modifyItem.parentNode.id) {
       todoItems[i].description = modifTaskInp.value;
     }
   }
-  sessionStorage.removeItem("todo");
+  sessionStorage.removeItem('todo');
   sessionStorage.setItem('todo', JSON.stringify(todoItems));
   window.history.back();
 })
